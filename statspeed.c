@@ -13,7 +13,7 @@ int main(int argc, char **argv) {
         exit( 1 );
     }
 
-    while ( --runs > 0 ) {
+    while ( --runs ) {
         if ( lstat( "/", &stat_buf ) ) {
             fprintf( stderr, "OMGWTF - Failed lstat!?\n" );
             exit( 1 );
